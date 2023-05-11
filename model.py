@@ -65,7 +65,6 @@ def train(model, dataloader_train, loss_func, optimizer, epochs, expand_range):
 
         epoch_correct_num /= len(dataloader_train.dataset)
         epoch_correct_num_list.append(epoch_correct_num)
-        print(len(epoch_correct_num_list))
         epoch_loss_sum_list.append(epoch_loss_sum)      
         print('Epoch Training Loss: {:.4f} | Epoch Training Accuracy: {:.4f}%'.format(epoch_loss_sum, epoch_correct_num*100))
     return epoch_correct_num_list, epoch_loss_sum_list       
